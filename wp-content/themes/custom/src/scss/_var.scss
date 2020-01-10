@@ -1,0 +1,31 @@
+$color-main: #fff;
+$color-secondary: #394b50;
+$color-paragraph: #7b7b7b;
+$color-title: #818b95;
+$color-subtitle: #99a9ae;
+$color-adress: #aeb7ba; 
+$color-warning: #ffbb42;
+$color-danger: #f6772c;
+$color-info: #709dca;
+$color-success:#e7edf3;
+
+@mixin classic-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@mixin arrow {
+    content: '';
+    display: block;
+    position: absolute;
+    background: url('../img/arrow.png') no-repeat center / contain;
+    width: 112px;
+    height: 27px;
+    top: 0;
+    right: -60px;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
